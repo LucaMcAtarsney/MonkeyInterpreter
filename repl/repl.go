@@ -14,7 +14,7 @@ func Start(in io.Reader, out io.Writer){
 	scanner := bufio.NewScanner(in)
 
 	for {
-		fmt.Fprintf(out,PROMPT)
+		fmt.Fprint(out,PROMPT) // FPRINTF gave me a yellow squigly
 		scanned := scanner.Scan()
 		if !scanned {
 			return

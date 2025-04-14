@@ -5,7 +5,6 @@ import (
 	"monkey/repl"
 	"os"
 	"os/user"
-	"os/users"
 )
 
 func main() {
